@@ -69,4 +69,15 @@ public class City {
     public void setPopulation(String population) {
         Population = population;
     }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "ID=" + ID +
+                ", Name='" + Name + '\'' +
+                ", CountryCode='" + CountryCode + '\'' +
+                ", District='" + District + '\'' +
+                ", Population='" + Population + '\'' +
+                '}';
+    }
 }
