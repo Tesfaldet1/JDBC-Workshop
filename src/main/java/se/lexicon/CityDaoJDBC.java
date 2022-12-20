@@ -28,6 +28,12 @@ public class CityDaoJDBC implements CityDao{
     }
     @Override
     public List<City> findByCode(String code) {
+        if(code == null) throw new IllegalArgumentException("the city code was null");
+        for (City cityCod: cityStorage){
+            if(cityCod.getCountryCode().equalsIgnoreCase(code))
+                cityStorage.add(cityCod);
+                return cityStorage;
+        }
         return null;
     }
     @Override
@@ -35,7 +41,8 @@ public class CityDaoJDBC implements CityDao{
         if(name == null) throw new IllegalArgumentException("City name is null");
         for(City city: cityStorage){
             if(city.getName().equalsIgnoreCase(name))
-                return Collections.singletonList(city);
+                cityStorage.add(city);
+                return cityStorage;
         }
         return  null;
 

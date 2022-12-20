@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import java.util.List;
+
 public class City {
     private  int ID;
     private  String Name;
