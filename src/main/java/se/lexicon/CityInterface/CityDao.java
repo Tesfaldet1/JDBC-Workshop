@@ -1,4 +1,6 @@
-package se.lexicon;
+package se.lexicon.CityInterface;
+
+import se.lexicon.model.City;
 
 import java.util.List;
 

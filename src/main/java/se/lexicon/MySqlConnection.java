@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import se.lexicon.Exception.JDBCConnectionException;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

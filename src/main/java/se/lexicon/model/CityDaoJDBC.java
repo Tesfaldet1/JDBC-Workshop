@@ -1,11 +1,12 @@
-package se.lexicon;
+package se.lexicon.model;
 
-import java.util.Collections;
+import se.lexicon.CityInterface.CityDao;
+
 import java.util.List;
 import java.util.ArrayList;
 
 
-public class CityDaoJDBC implements CityDao{
+public class CityDaoJDBC implements CityDao {
 
     private List <City> cityStorage;
     private static CityDaoJDBC instance;

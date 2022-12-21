@@ -1,5 +1,11 @@
 package se.lexicon;
 
+/**
+ * @author https://github.com/Tesfaldet1/JDBC-Workshop/tree/main/src/main/java/se/lexicon!
+ *
+ */
+import se.lexicon.Exception.JDBCConnectionException;
+
 import java.sql.*;
 
 public class JDBCConnectionExamples {
